@@ -18,6 +18,12 @@ namespace TestLabels.Controllers
             return View();
         }
 
+        public IActionResult Create()
+        {
+            var model = new InputModel();
+            return View(model);
+        }
+
         public IActionResult Privacy()
         {
             return View();
